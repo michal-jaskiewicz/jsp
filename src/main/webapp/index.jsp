@@ -6,6 +6,8 @@
     <title>Hello World!</title>
 </head>
 <body>
+<%--komentarz jsp --%>
+<!--komentarz html -->
 <p>Licznik odwiedzin: <%= ++visitCount%> </p>
 </body>
 </html>
