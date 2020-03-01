@@ -16,12 +16,17 @@
     Date creationTime = new Date(session.getCreationTime());
     Date lastAccessedTime = new Date(session.getLastAccessedTime());
     String userId = session.getAttribute("userId").toString();
+    String sessionId = session.getId();
 %>
 
 <table>
     <tr>
         <th>session info</th>
         <th>Value</th>
+    </tr>
+    <tr>
+        <td>sessionId</td>
+        <td><%=sessionId%></td>
     </tr>
     <tr>
         <td>UserId</td>
