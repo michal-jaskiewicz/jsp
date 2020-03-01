@@ -6,8 +6,9 @@
     <title>Hello World!</title>
 </head>
 <body>
-<%--komentarz jsp --%>
-<!--komentarz html -->
-<p>Licznik odwiedzin: <%= ++visitCount%> </p>
+<p>Serwer name: ${pageContext.request.serverName}</p>
+<p>Serwer port: ${pageContext.request.serverPort}</p>
+<p>Request Uri: ${pageContext.request.requestURI}</p>
+
 </body>
 </html>
