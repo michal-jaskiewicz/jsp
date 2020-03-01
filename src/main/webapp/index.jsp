@@ -9,7 +9,9 @@
 <p>Serwer name: ${pageContext.request.serverName}</p>
 <p>Serwer port: ${pageContext.request.serverPort}</p>
 <p>Request Uri: ${pageContext.request.requestURI}</p>
-<jsp:forward page="redirected.jsp"/>
+<jsp:forward page="redirected.jsp">
+    <jsp:param name="myParam" value="my parameter"/>
+</jsp:forward>
 
 </body>
 </html>
